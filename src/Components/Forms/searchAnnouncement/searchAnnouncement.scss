@@ -1,0 +1,9 @@
+.searchAnnouncement {
+  margin: 0 auto;
+  &__button.button {
+    border-radius: 25px;
+  }
+  &__button.secondary {
+    margin-left: 5px;
+  }
+}
