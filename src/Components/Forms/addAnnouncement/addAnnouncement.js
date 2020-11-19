@@ -8,7 +8,6 @@ const handleChange = (event, callBack) => {
 };
 
 export const AddAnnouncement = (props) => {
-
   const [announcementBody, setAnnouncementBody] = useState('');
   const [announcementTitle, setAnnouncementTitle] = useState('');
 

@@ -16,11 +16,16 @@ export const SelectAnnouncement = props => (
         >
           Choose announcement
         </option>
-        {props.announcements.map(announcement =>
-          <option value={announcement.id} key={announcement.id}>
-            {announcement.title}
-          </option>)
-        }
+        {props.announcements.map(
+          announcement => (
+            <option
+              value={announcement.id}
+              key={announcement.id}
+            >
+              {announcement.title}
+            </option>
+          ),
+        )}
       </select>
     </div>
   </div>
@@ -33,5 +38,3 @@ SelectAnnouncement.propTypes = {
     title: PropTypes.string.isRequired,
   })).isRequired,
 };
-
-

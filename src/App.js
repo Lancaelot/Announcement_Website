@@ -6,6 +6,7 @@ import { AddAnnouncement } from './Components/Forms/addAnnouncement';
 import { SearchAnnouncement } from './Components/Forms/searchAnnouncement';
 import { SelectAnnouncement }
   from './Components/Forms/selectAnnouncement/selectAnnouncement';
+import { Loader } from "./Components/Loader";
 
 const apiSection = 'posts';
 
@@ -63,10 +64,15 @@ const App = () => {
         />
       </div>
       <div className="App__body">
-        <AnnouncementList
-          announcements={announcements}
-          handleChange={handleChange}
-        />
+        {announcements.length > 0
+          ? (
+            <AnnouncementList
+              announcements={announcements}
+              handleChange={handleChange}
+            />
+          )
+          : <Loader />
+        }
         <AddAnnouncement
           handleChange={handleChange}
         />

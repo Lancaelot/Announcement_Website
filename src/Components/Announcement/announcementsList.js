@@ -32,4 +32,3 @@ AnnouncementList.propTypes = {
     id: PropTypes.number.isRequired,
   })).isRequired,
 };
-
