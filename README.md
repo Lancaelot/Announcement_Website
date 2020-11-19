@@ -13,8 +13,8 @@ Implement Announcement Website with the following functionality:
 5. Search announcements by title
 6. Show selected announcement details:
 
-a. Should contain such fields: Title, Description, Date Added
-b. Should show top 3 similar announcements // still in progress
+1. Should contain such fields: Title, Description, Date Added
+2. Should show top 3 similar announcements // still in progress
 
 ## Local deployment
 
