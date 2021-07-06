@@ -1,8 +1,14 @@
-.nav {
-  display: flex;
-  margin: 20px;
-
-  * {
-    margin-right: 10px;
+.App {
+  max-width: 991px;
+  margin: 0 auto;
+  &__body {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
   }
+  &__row {
+    display: flex;
+    margin-left: 40px;
+  }
+
 }
